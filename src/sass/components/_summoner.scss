@@ -1,0 +1,76 @@
+.summoner {
+    padding: 15rem 10rem 0 10rem;
+
+
+    height: 90vh;
+    //background-image: url('img/smBg.png');
+    position: relative;
+    z-index: 1;
+    //text-align: center;
+
+    &-container {
+        background-color: #17171783;
+        border-radius: 2.4rem;
+
+        display: flex;
+
+        &--data {
+            width: 20%;
+            padding: 3rem 5rem;
+
+            border-right: 2px solid black;
+        }
+
+        &--mastery {
+            padding: 3rem 5rem;
+            height: 67vh;
+            width: 100%;
+            overflow: auto;
+
+        }
+    }
+
+
+
+    &-rank {
+        height: 13rem;
+    }
+
+    &-icon {
+        height: 13rem;
+        border: 2px #707070 solid;
+    }
+
+    &-important {
+        font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+        font-size: 1.8rem;
+        color: white;
+        padding: 1rem 0;
+        font-weight: bold;
+    }
+    &-text {
+        font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+        font-size: 1.4rem;
+        color: white;
+        padding-bottom: 1rem;
+    }
+
+    &-mastery {
+        width: 6.6rem;
+        display: inline-block;
+
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        img {
+            height: 6.6rem;
+        }
+        p {
+            font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+            font-size: 1.4rem;
+            color: white;
+
+            text-align: center;
+        }
+    }
+
+}

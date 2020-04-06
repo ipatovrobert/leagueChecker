@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom right, #111111, #0D0D0D);
+  background-repeat: no-repeat; }
+
+@font-face {
+  font-family: 'Metropolis1';
+  src: url("/src/fonts/Metropolis-Regular.woff") format("woff"); }
+
+.container {
+  width: 80%;
+  background-color: #2D2D2D;
+  margin: 5vh auto;
+  border-radius: 3.7rem;
+  max-height: 90vh;
+  min-height: 90vh;
+  overflow: hidden;
+  position: relative; }
+
+#myVideo {
+  position: absolute;
+  width: 90vw; }
+
+.navbar {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 10rem;
+  position: absolute;
+  z-index: 10; }
+  .navbar li {
+    display: inline-block; }
+  .navbar a:link,
+  .navbar a:active,
+  .navbar a:visited,
+  .navbar a {
+    font-family: 'Metropolis';
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none; }
+    .navbar a:link:not(:first-child),
+    .navbar a:active:not(:first-child),
+    .navbar a:visited:not(:first-child),
+    .navbar a:not(:first-child) {
+      margin-left: 2rem; }
+  .navbar .navbar-title {
+    font-family: 'Metropolis';
+    color: white;
+    font-size: 2rem;
+    font-weight: bold; }
+  .navbar .navbar-link {
+    font-family: 'Metropolis';
+    color: white;
+    font-size: 1.6rem; }
+    .navbar .navbar-link:not(:first-child) {
+      margin-left: 2rem; }
+
+.fr {
+  float: right; }
+
+.search {
+  height: 95vh;
+  background-image: url("img/bg.png");
+  background-position: top left;
+  background-size: cover;
+  padding: 7rem 5rem 0 5rem; }
+  .search .centering {
+    width: 75%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .search-heading {
+    font-family: 'Metropolis', 'Roboto', 'sans-serif';
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem; }
+    .search-heading:hover {
+      transform: scale(1.05); }
+  .search-paragraph {
+    font-family: 'Metropolis', 'Roboto', 'sans-serif';
+    color: white;
+    font-size: 1.6rem; }
+  .search input[type='text'] {
+    width: 50%;
+    height: 3.5rem;
+    border-style: none;
+    border-radius: 100px;
+    padding-left: 2rem;
+    outline: none; }
+  .search input[type='submit'] {
+    width: 14rem;
+    height: 3.6rem;
+    border-style: none;
+    border-radius: 100px;
+    background-color: #161616;
+    font-family: 'Metropolis', 'Roboto', 'sans-serif';
+    color: white;
+    font-size: 1.6rem;
+    position: relative;
+    left: -105px;
+    top: 1px;
+    transition: .2s all;
+    outline: none; }
+    .search input[type='submit']:hover {
+      transform: scale(1.05); }
+    .search input[type='submit']:active {
+      transform: scale(1); }
+  .search form {
+    transform: translateX(75px); }
+
+.mg-top {
+  margin-top: 7rem;
+  margin-bottom: 2rem; }
+
+.summoner {
+  padding: 15rem 10rem 0 10rem;
+  height: 90vh;
+  position: relative;
+  z-index: 1; }
+  .summoner-container {
+    background-color: #17171783;
+    border-radius: 2.4rem;
+    display: flex; }
+    .summoner-container--data {
+      width: 20%;
+      padding: 3rem 5rem;
+      border-right: 2px solid black; }
+    .summoner-container--mastery {
+      padding: 3rem 5rem;
+      height: 67vh;
+      width: 100%;
+      overflow: auto; }
+  .summoner-rank {
+    height: 13rem; }
+  .summoner-icon {
+    height: 13rem;
+    border: 2px #707070 solid; }
+  .summoner-important {
+    font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem 0;
+    font-weight: bold; }
+  .summoner-text {
+    font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+    font-size: 1.4rem;
+    color: white;
+    padding-bottom: 1rem; }
+  .summoner-mastery {
+    width: 6.6rem;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 3rem; }
+    .summoner-mastery img {
+      height: 6.6rem; }
+    .summoner-mastery p {
+      font-family: 'Metropolis', 'Montserrat', 'Roboto', 'sans-serif';
+      font-size: 1.4rem;
+      color: white;
+      text-align: center; }
+
+.contact {
+  padding: 15rem 10rem 0 10rem;
+  position: relative; }
+  .contact h1 {
+    font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem; }
+  .contact label {
+    display: block;
+    font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem; }
+  .contact input {
+    margin-bottom: 2rem;
+    height: 3rem;
+    width: 45rem;
+    border-radius: 2rem;
+    border-style: none;
+    padding: 0 2rem; }
+  .contact input[type='submit'] {
+    display: block;
+    width: 15rem; }
+  .contact textarea {
+    margin-bottom: 2rem;
+    height: 10rem;
+    width: 45rem;
+    border-radius: 2rem;
+    border-style: none;
+    padding: 2rem 2rem; }
+
+.about {
+  position: relative;
+  padding: 15rem 10rem 0 10rem; }
+  .about h1 {
+    font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem; }
+  .about p {
+    font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+    font-size: 2rem;
+    color: white;
+    max-width: 50%; }

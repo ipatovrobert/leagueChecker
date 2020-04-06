@@ -1,0 +1,43 @@
+.contact {
+    padding: 15rem 10rem 0 10rem;
+    position: relative;
+
+
+    h1 {
+        font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+        font-size: 4rem;
+        color: white;
+        margin-bottom: 5rem;
+    }
+
+    label {
+        display: block;
+        font-family: 'Metropolis', 'Montserrat', 'sans-serif';
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        margin-bottom: 2rem;
+        height: 3rem;
+        width: 45rem;
+        border-radius: 2rem;
+        border-style: none;
+        padding: 0 2rem;
+    }
+    input[type='submit'] {
+        display: block;
+        width: 15rem;
+    }
+    textarea {
+        margin-bottom: 2rem;
+        height: 10rem;
+        width: 45rem;
+        border-radius: 2rem;
+        border-style: none;
+        padding: 2rem 2rem;
+    }
+
+    
+}

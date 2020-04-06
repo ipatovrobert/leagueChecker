@@ -1,0 +1,21 @@
+.container {
+    width: 80%;
+    background-color: #2D2D2D;
+
+    margin: 5vh auto;
+    border-radius: 3.7rem;
+
+    max-height: 90vh;
+    min-height: 90vh;
+
+    overflow: hidden;
+    position: relative;
+    //z-index: 1;
+}
+
+#myVideo {
+    position: absolute;
+    width: 90vw;
+    //min-height: 100vh;
+    //z-index: -1;
+}
